@@ -9,7 +9,7 @@ def create_app():
 
     # BLUEPRINTS
     from .views.admin_auth import admin
-    app.register_blueprint(admin, url_prefix = "/owner")
+    app.register_blueprint(admin, url_prefix = "/")
 
     #from .views.category import category
     #app.register_blueprint(category, url_prefix="/owner")

@@ -8,6 +8,7 @@ admin = Blueprint("admin", __name__)
 #db = get_connection()
 
 @admin.get("/")
+@admin.get("/owner")
 #@guest_admin # don,t understand
 def login_page():
     return render_template("admin/login.html")
